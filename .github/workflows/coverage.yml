@@ -1,0 +1,63 @@
+name: Coverage
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+permissions:
+  contents: read
+  pull-requests: write
+
+env:
+  PYTHONWARNINGS: error
+  BASE_IMAGE: openpilot-base
+  DOCKER_LOGIN: docker login ghcr.io -u ${{ github.actor }} -p ${{ secrets.GITHUB_TOKEN }}
+  BUILD: selfdrive/test/docker_build.sh base
+  RUN: docker run --shm-size 2G -v $PWD:/tmp/openpilot -w /tmp/openpilot -e CI=1 -e PYTHONWARNINGS=error -e FILEREADER_CACHE=1 -e PYTHONPATH=/tmp/openpilot -v $GITHUB_WORKSPACE/.ci_cache/scons_cache:/tmp/scons_cache -v $GITHUB_WORKSPACE/.ci_cache/comma_download_cache:/tmp/comma_download_cache $BASE_IMAGE /bin/bash -c
+
+jobs:
+  coverage:
+    name: Test Coverage
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - name: Setup with retry
+        uses: ./.github/workflows/setup-with-retry
+        id: setup-step
+
+      - name: Build openpilot
+        run: ${{ env.RUN }} "scons -j$(nproc)"
+
+      - name: Run tests with coverage
+        timeout-minutes: 20
+        run: |
+          ${{ env.RUN }} "source selfdrive/test/setup_xvfb.sh && \
+                          pip install pytest-cov coverage[toml] && \
+                          mkdir -p .local && \
+                          pytest --cov=selfdrive --cov=system --cov=common --cov=tools \
+                                 --cov-report=xml:.local/coverage.xml \
+                                 --cov-report=term \
+                                 -m 'not slow' \
+                                 -n auto && \
+                          chmod 666 .local/coverage.xml"
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v5
+        with:
+          file: ./.local/coverage.xml
+          flags: unittests
+          token: ${{ secrets.CODECOV_TOKEN }}
+          fail_ci_if_error: false
+          verbose: true
+
+      - name: Coverage Summary
+        if: github.event_name == 'pull_request'
+        run: |
+          echo "### 📊 Coverage Report" >> $GITHUB_STEP_SUMMARY
+          echo "Coverage results have been uploaded to Codecov." >> $GITHUB_STEP_SUMMARY

@@ -97,6 +97,8 @@ testing = [
   "pytest-asyncio",
   "pytest-mock",
   "pytest-repeat",
+  "pytest-cov",
+  "coverage[toml] >=7.0",
   "ruff",
   "codespell",
   "pre-commit-hooks",
@@ -273,3 +275,59 @@ lint.flake8-implicit-str-concat.allow-multiline = false
 
 [tool.ruff.format]
 quote-style = "preserve"
+
+[tool.coverage.run]
+source = ["selfdrive", "system", "common", "tools"]
+omit = [
+  "*/tests/*",
+  "*/test_*.py",
+  "*/__init__.py",
+  "*/SConscript",
+  # Submodules
+  "opendbc/*",
+  "panda/*",
+  "cereal/*",
+  "msgq/*",
+  "rednose/*",
+  "tinygrad/*",
+  "teleoprtc/*",
+  # Generated code
+  "*/generated/*",
+  "*/c_generated_code/*",
+  # Third party
+  "third_party/*",
+  # Tools that don't need coverage
+  "tools/cabana/*",
+  "tools/replay/*",
+  "tools/sim/*",
+]
+parallel = true
+concurrency = ["multiprocessing", "thread"]
+
+[tool.coverage.report]
+precision = 2
+show_missing = true
+skip_covered = false
+skip_empty = true
+sort = "Cover"
+exclude_lines = [
+  "pragma: no cover",
+  "def __repr__",
+  "raise AssertionError",
+  "raise NotImplementedError",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+  "if typing.TYPE_CHECKING:",
+  "@abstractmethod",
+  "@abc.abstractmethod",
+  "class .*\\bProtocol\\):",
+  "@overload",
+  "except ImportError:",
+  "\\.\\.\\.",
+]
+
+[tool.coverage.html]
+directory = ".local/htmlcov"
+
+[tool.coverage.xml]
+output = ".local/coverage.xml"

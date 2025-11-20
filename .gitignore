@@ -53,6 +53,9 @@ selfdrive/car/tests/cars_dump
 system/camerad/camerad
 system/camerad/test/ae_gray_test
 
+# AI-generated analysis and reports (should NOT be committed)
+.local/
+
 .coverage*
 coverage.xml
 htmlcov

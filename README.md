@@ -24,6 +24,7 @@ Quick start: `bash <(curl -fsSL openpilot.comma.ai)`
 
 [![openpilot tests](https://github.com/commaai/openpilot/actions/workflows/tests.yaml/badge.svg)](https://github.com/commaai/openpilot/actions/workflows/tests.yaml)
 [![codecov](https://codecov.io/gh/rechtevan/openpilot/branch/master/graph/badge.svg)](https://codecov.io/gh/rechtevan/openpilot)
+[![CodeQL](https://github.com/rechtevan/openpilot/workflows/CodeQL/badge.svg)](https://github.com/rechtevan/openpilot/actions?query=workflow%3ACodeQL)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![X Follow](https://img.shields.io/twitter/follow/comma_ai)](https://x.com/comma_ai)
 [![Discord](https://img.shields.io/discord/469524606043160576)](https://discord.comma.ai)

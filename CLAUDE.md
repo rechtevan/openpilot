@@ -56,6 +56,32 @@ pytest selfdrive/test/test_onroad.py
 pytest selfdrive/test/process_replay/test_processes.py
 ```
 
+### Coverage
+```bash
+# Run tests with coverage locally
+pytest --cov=selfdrive --cov=system --cov=common --cov=tools \
+       --cov-report=html \
+       --cov-report=term \
+       -m 'not slow'
+
+# View HTML coverage report
+open .local/htmlcov/index.html  # macOS
+xdg-open .local/htmlcov/index.html  # Linux
+
+# Generate coverage report
+coverage report -m
+
+# Combine coverage from parallel runs
+coverage combine
+coverage report
+```
+
+**Code Coverage Standards:**
+- Target: 80% coverage for new code
+- PR checks: Coverage should not decrease by more than 1%
+- View coverage reports at: https://codecov.io/gh/rechtevan/openpilot
+- Configuration: `pyproject.toml` [tool.coverage.*] sections
+
 ### Linting
 ```bash
 # Run all linting (from scripts/lint/lint.sh)

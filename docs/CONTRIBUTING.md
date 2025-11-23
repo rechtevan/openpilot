@@ -54,6 +54,22 @@ A good pull request has all of the following:
   * if you've improved your car's tuning, post before and after plots
 * passes the CI tests
 
+### Code Coverage
+
+Pull requests should maintain or improve code coverage:
+* New features should include tests covering ≥80% of new code
+* Bug fixes should include regression tests
+* Coverage reports are automatically generated and commented on PRs
+* View detailed coverage at https://codecov.io/gh/rechtevan/openpilot
+
+### Code Quality
+
+This fork uses automated quality checks:
+* **Pre-commit hooks**: Run `pre-commit install` to enable automated checks on commit
+* **CodeQL**: Automated security scanning on all PRs
+* **Ruff & MyPy**: Code linting and type checking (run via pre-commit or manually)
+* **Codespell**: Spell checking to catch common typos
+
 ## Contributing without Code
 
 * Report bugs in GitHub issues.

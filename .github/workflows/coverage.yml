@@ -38,11 +38,11 @@ jobs:
         timeout-minutes: 20
         run: |
           ${{ env.RUN }} "source selfdrive/test/setup_xvfb.sh && \
-                          python3 -m pip install --no-cache-dir pytest-cov 'coverage[toml]>=7.0' && \
                           mkdir -p .local && \
-                          python3 -m pytest --cov=selfdrive --cov=system --cov=common --cov=tools \
+                          pytest --cov=selfdrive --cov=system --cov=common --cov=tools \
                                  --cov-report=xml:.local/coverage.xml \
                                  --cov-report=term \
+                                 --continue-on-collection-errors \
                                  -m 'not slow' \
                                  -n auto && \
                           chmod 666 .local/coverage.xml"

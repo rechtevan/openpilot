@@ -38,6 +38,7 @@ jobs:
         timeout-minutes: 20
         run: |
           ${{ env.RUN }} "source selfdrive/test/setup_xvfb.sh && \
+                          uv pip install --system pytest-cov coverage[toml] && \
                           mkdir -p .local && \
                           pytest --cov=selfdrive --cov=system --cov=common --cov=tools \
                                  --cov-report=xml:.local/coverage.xml \

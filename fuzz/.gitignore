@@ -1,0 +1,18 @@
+# Fuzzing artifacts
+
+# Generated corpus (keep seeds, ignore generated)
+corpus/
+
+# Compiled fuzzers
+libfuzzer/fuzz_spi_checksum
+libfuzzer/fuzz_can_capnp
+aflpp/fuzz_spi_checksum_afl
+aflpp/fuzz_can_capnp_afl
+
+# AFL++ artifacts
+findings/
+aflpp/*.log
+
+# Crash artifacts
+crashes/
+hangs/

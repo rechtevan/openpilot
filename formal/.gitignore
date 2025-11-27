@@ -1,0 +1,35 @@
+# Formal verification generated artifacts
+
+# TLA+ generated files
+tla/states/
+tla/*_TTrace_*.bin
+tla/*_TTrace_*.tla
+tla/tla2tools.jar
+
+# SPIN generated files
+spin/pan.*
+spin/pan_*
+spin/*.trail
+spin/_spin_nvr.tmp
+
+# Validation results (stored in .local)
+validation/.local/
+requirements/.local/
+
+# Sphinx build output
+requirements/_build/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Coverage data
+.coverage
+.coverage.*
+
+# Hypothesis cache
+.hypothesis/

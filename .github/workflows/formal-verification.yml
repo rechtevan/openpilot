@@ -157,7 +157,7 @@ jobs:
         run: |
           cd formal/validation
           echo "=== Running model-to-code validation ==="
-          python -c "
+          python -c '
 from marl_validator import AdversarialValidator
 from env_state_machine import StateMachineReference, create_openpilot_env, BisimulationChecker
 
@@ -170,31 +170,31 @@ checker = BisimulationChecker(ref, impl)
 equivalent = checker.check_equivalence(num_traces=10000, seed=42)
 
 if not equivalent:
-    print('DIVERGENCES FOUND:')
+    print("DIVERGENCES FOUND:")
     for d in checker.get_divergences()[:5]:
-        print(f'  Step {d[\"step\"]}: {d[\"state_a\"]} != {d[\"state_b\"]}')
+        print(f"  Step {d[\"step\"]}: {d[\"state_a\"]} != {d[\"state_b\"]}")
     exit(1)
 else:
-    print('Bisimulation check PASSED: 10,000 traces, 0 divergences')
-"
+    print("Bisimulation check PASSED: 10,000 traces, 0 divergences")
+'
 
       - name: Run Coverage-Guided Validation
         run: |
           cd formal/validation
-          python -c "
+          python -c '
 from marl_validator import AdversarialValidator
 
 validator = AdversarialValidator(seed=42)
 results = validator.validate_coverage_guided(num_traces=5000)
 
-print(f'Coverage-guided validation:')
-print(f'  Traces: {results[\"traces\"]}')
-print(f'  States covered: {results[\"states_covered\"]}')
-print(f'  Divergences: {results[\"divergences\"]}')
+print(f"Coverage-guided validation:")
+print(f"  Traces: {results[\"traces\"]}")
+print(f"  States covered: {results[\"states_covered\"]}")
+print(f"  Divergences: {results[\"divergences\"]}")
 
-if results['divergences'] > 0:
+if results["divergences"] > 0:
     exit(1)
-"
+'
 
       - name: Validation Summary
         if: github.event_name == 'pull_request'

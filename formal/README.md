@@ -1,5 +1,7 @@
 # Formal Verification Models for openpilot
 
+[![Formal Verification](https://github.com/rechtevan/openpilot/actions/workflows/formal-verification.yml/badge.svg)](https://github.com/rechtevan/openpilot/actions/workflows/formal-verification.yml)
+
 This directory contains formal specifications for safety-critical components of openpilot using TLA+ and SPIN/Promela.
 
 ## Directory Structure

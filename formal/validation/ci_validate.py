@@ -35,10 +35,15 @@ def run_bisimulation_validation():
 def run_coverage_validation():
     """Run coverage-guided validation."""
     from marl_validator import AdversarialValidator
+    from env_state_machine import StateMachineReference, create_openpilot_env
 
     print("\n=== Running coverage-guided validation ===")
 
-    validator = AdversarialValidator(seed=42)
+    validator = AdversarialValidator(
+        reference_factory=StateMachineReference,
+        implementation_factory=create_openpilot_env,
+        seed=42
+    )
     results = validator.validate_coverage_guided(num_traces=5000)
 
     print(f"Coverage-guided validation:")

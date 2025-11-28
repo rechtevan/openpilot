@@ -44,14 +44,14 @@ def run_coverage_validation():
         implementation_factory=create_openpilot_env,
         seed=42
     )
-    results = validator.validate_coverage_guided(num_traces=5000)
+    result = validator.validate_coverage_guided(num_traces=5000)
 
     print(f"Coverage-guided validation:")
-    print(f'  Traces: {results["traces"]}')
-    print(f'  States covered: {results["states_covered"]}')
-    print(f'  Divergences: {results["divergences"]}')
+    print(f"  Traces: {result.num_traces}")
+    print(f"  States covered: {len(result.coverage)}")
+    print(f"  Divergences: {result.divergences_found}")
 
-    return results["divergences"] == 0
+    return result.divergences_found == 0
 
 
 def main():

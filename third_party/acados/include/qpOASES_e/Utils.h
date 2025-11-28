@@ -320,7 +320,7 @@ returnValue qpOASES_convertPrintLevelToString(	PrintLevel value, 		/**< Value to
 												);
 
 
-/** Converts a returnValue from an QProblem(B) object into a more 
+/** Converts a returnValue from an QProblem(B) object into a more
  *	simple status flag.
  *
  * \return  0: QP problem solved
@@ -359,9 +359,9 @@ void gdb_printmat(	const char *fname,			/**< File name. */
 #endif /* __DEBUG__ */
 
 
-#if defined(__DSPACE__) || defined(__XPCTARGET__) 
+#if defined(__DSPACE__) || defined(__XPCTARGET__)
 void __cxa_pure_virtual( void );
-#endif /* __DSPACE__ || __XPCTARGET__*/ 
+#endif /* __DSPACE__ || __XPCTARGET__*/
 
 
 

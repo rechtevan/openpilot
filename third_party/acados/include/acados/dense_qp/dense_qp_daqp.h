@@ -85,7 +85,7 @@ void dense_qp_daqp_opts_initialize_default(void *config, dense_qp_dims *dims, vo
 //
 void dense_qp_daqp_opts_update(void *config, dense_qp_dims *dims, void *opts_);
 //
-// memory 
+// memory
 acados_size_t dense_qp_daqp_workspace_calculate_size(void *config, dense_qp_dims *dims, void *opts_);
 //
 void *dense_qp_daqp_workspace_assign(void *config, dense_qp_dims *dims, void *raw_memory);

@@ -243,5 +243,3 @@ class Glonass(KaitaiStruct):
 
             self._m_z = ((self.z_value * -1) if self.z_sign else self.z_value)
             return getattr(self, '_m_z', None)
-
-

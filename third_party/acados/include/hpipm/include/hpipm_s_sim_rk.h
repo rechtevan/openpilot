@@ -68,5 +68,3 @@ void s_sim_rk_data_set_all(int expl, float *A_rk, float *B_rk, float *C_rk, stru
 #endif
 
 #endif // HPIPM_S_SIM_RK_H_
-
-

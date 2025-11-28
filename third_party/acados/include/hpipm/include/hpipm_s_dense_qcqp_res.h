@@ -102,7 +102,3 @@ void s_dense_qcqp_res_compute_inf_norm(struct s_dense_qcqp_res *res);
 
 
 #endif // HPIPM_S_DENSE_QCQP_RES_H_
-
-
-
-

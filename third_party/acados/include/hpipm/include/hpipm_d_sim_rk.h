@@ -68,4 +68,3 @@ void d_sim_rk_data_set_all(int expl, double *A_rk, double *B_rk, double *C_rk, s
 #endif
 
 #endif // HPIPM_D_SIM_RK_H_
-

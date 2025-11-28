@@ -196,4 +196,3 @@ void d_dense_qcqp_get_us_mask(struct d_dense_qcqp *qp, double *us);
 
 
 #endif // HPIPM_D_DENSE_QCQP_H_
-

@@ -269,5 +269,3 @@ class Ubx(KaitaiStruct):
         self._m_checksum = self._io.read_u2le()
         self._io.seek(_pos)
         return getattr(self, '_m_checksum', None)
-
-

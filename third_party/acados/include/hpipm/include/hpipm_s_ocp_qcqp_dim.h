@@ -115,5 +115,3 @@ void s_ocp_qcqp_dim_get_nu(struct s_ocp_qcqp_dim *dim, int stage, int *value);
 
 
 #endif // HPIPM_S_OCP_QCQP_DIM_H_
-
-

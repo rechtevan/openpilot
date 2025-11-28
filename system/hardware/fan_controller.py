@@ -35,4 +35,3 @@ class TiciFanController(BaseFanController):
 
     self.last_ignition = ignition
     return fan_pwr_out
-

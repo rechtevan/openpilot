@@ -200,5 +200,3 @@ void s_dense_qcqp_ipm_sens(struct s_dense_qcqp *qp, struct s_dense_qcqp_sol *qp_
 
 
 #endif // HPIPM_S_DENSE_QCQP_IPM_H_
-
-

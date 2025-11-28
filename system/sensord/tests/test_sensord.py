@@ -229,4 +229,3 @@ class TestSensord:
     time.sleep(1)
     state_two = get_irq_count(self.sensord_irq)
     assert state_one == state_two, "Interrupts received after sensord stop!"
-

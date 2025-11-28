@@ -187,5 +187,3 @@ void d_tree_ocp_qcqp_ipm_solve(struct d_tree_ocp_qcqp *qp, struct d_tree_ocp_qcq
 
 
 #endif // HPIPM_D_TREE_OCP_QCQP_IPM_H_
-
-

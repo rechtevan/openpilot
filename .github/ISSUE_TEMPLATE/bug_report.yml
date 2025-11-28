@@ -44,4 +44,3 @@ body:
   - type: textarea
     attributes:
       label: Additional info
-

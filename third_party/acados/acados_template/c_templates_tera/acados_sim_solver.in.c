@@ -523,4 +523,3 @@ sim_solver  * {{ model.name }}_acados_get_sim_solver(sim_solver_capsule *capsule
 {
     return capsule->acados_sim_solver;
 };
-

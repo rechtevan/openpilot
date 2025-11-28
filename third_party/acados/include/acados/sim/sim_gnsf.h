@@ -50,7 +50,7 @@ extern "C" {
 // #include "blasfeo/include/blasfeo_i_aux_ext_dep.h"
 // #include "blasfeo/include/blasfeo_target.h"
 
-/* 
+/*
 GNSF - Generalized Nonlinear Static Feedback Model
 has the following form
 https://github.com/acados/acados/files/3359595/gnsf_structure_blo.pdf

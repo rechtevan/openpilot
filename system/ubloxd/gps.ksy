@@ -186,4 +186,3 @@ types:
             type: s1
           - id: b3
             type: s1
-

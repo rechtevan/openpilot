@@ -111,5 +111,3 @@ void s_ocp_qcqp_sol_set_su(int stage, float *vec, struct s_ocp_qcqp_sol *qp_sol)
 
 
 #endif // HPIPM_S_OCP_QCQP_SOL_H_
-
-

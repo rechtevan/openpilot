@@ -5,7 +5,7 @@
 #ifndef __OPENCL_CL_EXT_QCOM_H
 #define __OPENCL_CL_EXT_QCOM_H
 
-// Needed by cl_khr_egl_event extension 
+// Needed by cl_khr_egl_event extension
 #include <EGL/egl.h>
 #include <EGL/eglext.h>
 #include <CL/cl_ext.h>

@@ -196,5 +196,3 @@ void s_dense_qcqp_get_us_mask(struct s_dense_qcqp *qp, float *us);
 
 
 #endif // HPIPM_S_DENSE_QCQP_H_
-
-

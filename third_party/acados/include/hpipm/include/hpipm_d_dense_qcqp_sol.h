@@ -82,4 +82,3 @@ void d_dense_qcqp_sol_get_v(struct d_dense_qcqp_sol *qp_sol, double *v);
 
 
 #endif // HPIPM_D_DENSE_QCQP_SOL_H_
-

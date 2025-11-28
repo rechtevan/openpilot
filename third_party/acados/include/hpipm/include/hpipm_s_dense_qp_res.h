@@ -101,6 +101,3 @@ void s_dense_qp_res_get_all(struct s_dense_qp_res *res, float *res_g, float *res
 
 
 #endif // HPIPM_D_DENSE_QP_RES_H_
-
-
-

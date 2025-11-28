@@ -144,4 +144,3 @@ void blasfeo_ref_svecpei(int kmax, int *ipiv, struct blasfeo_svec *sx, int xi);
 #endif
 
 #endif  // BLASFEO_S_AUX_REF_H_
-

@@ -280,4 +280,3 @@ void blasfeo_ref_dgelqf_pd_lla(int m, int n1, struct blasfeo_dmat *sL0, int l0i,
 #endif
 
 #endif  // BLASFEO_D_BLASFEO_REF_API_H_
-

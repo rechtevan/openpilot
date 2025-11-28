@@ -111,4 +111,3 @@ void d_ocp_qcqp_sol_set_su(int stage, double *vec, struct d_ocp_qcqp_sol *qp_sol
 
 
 #endif // HPIPM_D_OCP_QCQP_SOL_H_
-

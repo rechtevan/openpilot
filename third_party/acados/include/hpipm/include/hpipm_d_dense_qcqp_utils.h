@@ -78,5 +78,3 @@ void d_dense_qcqp_res_print(struct d_dense_qcqp_dim *qp_dim, struct d_dense_qcqp
 
 
 #endif // HPIPM_D_DENSE_QCQP_UTILS_H_
-
-

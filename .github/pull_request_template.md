@@ -14,11 +14,11 @@ A route with the fingerprint
 
 **Description**
 
-A description of the bug and the fix. Also link the issue if it exists. 
+A description of the bug and the fix. Also link the issue if it exists.
 
 **Verification**
 
-Explain how you tested this bug fix. 
+Explain how you tested this bug fix.
 
 **Route**
 
@@ -31,11 +31,11 @@ Route: [a route with the bug fix]
 
 **Description**
 
-A description of the bug and the fix. Also link the issue if it exists. 
+A description of the bug and the fix. Also link the issue if it exists.
 
 **Verification**
 
-Explain how you tested this bug fix. 
+Explain how you tested this bug fix.
 
 
 -->
@@ -57,12 +57,11 @@ Explain how you tested this bug fix.
 
 **Description**
 
-A description of the refactor, including the goals it accomplishes. 
+A description of the refactor, including the goals it accomplishes.
 
 **Verification**
 
-Explain how you tested the refactor for regressions. 
+Explain how you tested the refactor for regressions.
 
 
 -->
-

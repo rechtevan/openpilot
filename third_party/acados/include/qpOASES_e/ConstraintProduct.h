@@ -29,7 +29,7 @@
  *	\date 2009-2015
  *
  *	Declaration of the ConstraintProduct interface which allows to specify a
- *	user-defined function for evaluating the constraint product at the 
+ *	user-defined function for evaluating the constraint product at the
  *	current iterate to speed-up QP solution in case of a specially structured
  *	constraint matrix.
  */
@@ -43,11 +43,11 @@
 BEGIN_NAMESPACE_QPOASES
 
 
-/** 
+/**
  *	\brief Interface for specifying user-defined evaluations of constraint products.
  *
- *	An interface which allows to specify a user-defined function for evaluating the 
- *	constraint product at the current iterate to speed-up QP solution in case 
+ *	An interface which allows to specify a user-defined function for evaluating the
+ *	constraint product at the current iterate to speed-up QP solution in case
  *	of a specially structured constraint matrix.
  *
  *	\author Hans Joachim Ferreau (thanks to Kwame Minde Kufoalor)

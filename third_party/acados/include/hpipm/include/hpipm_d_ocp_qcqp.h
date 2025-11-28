@@ -300,4 +300,3 @@ void d_ocp_qcqp_get_idxs_rev(int stage, struct d_ocp_qcqp *qp, int *vec);
 
 
 #endif // HPIPM_D_OCP_QCQP_H_
-

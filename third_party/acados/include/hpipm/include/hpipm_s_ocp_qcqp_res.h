@@ -111,5 +111,3 @@ void s_ocp_qcqp_res_get_max_res_comp(struct s_ocp_qcqp_res *res, float *value);
 
 
 #endif // HPIPM_S_OCP_QCQP_RES_H_
-
-

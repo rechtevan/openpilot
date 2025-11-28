@@ -80,5 +80,3 @@ void s_dense_qp_arg_print(struct s_dense_qp_dim *qp_dim, struct s_dense_qp_ipm_a
 
 
 #endif // HPIPM_S_DENSE_QP_UTILS_H_
-
-

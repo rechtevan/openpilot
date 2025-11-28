@@ -114,5 +114,3 @@ void s_tree_ocp_qcqp_dim_set_nsq(int stage, int value, struct s_tree_ocp_qcqp_di
 
 
 #endif // HPIPM_S_TREE_OCP_QCQP_DIM_H_
-
-

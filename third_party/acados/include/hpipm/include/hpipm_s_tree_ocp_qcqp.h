@@ -210,4 +210,3 @@ void s_tree_ocp_qcqp_set_Jsq(int node, float *vec, struct s_tree_ocp_qcqp *qp);
 
 
 #endif // HPIPM_S_TREE_OCP_QCQP_H_
-

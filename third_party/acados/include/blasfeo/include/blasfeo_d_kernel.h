@@ -172,8 +172,8 @@ void kernel_dpack_nn_8_vs_lib8(int kmax, double *A, int lda, double *C, int m1);
 void kernel_dpack_tn_8_lib8(int kmax, double *A, int lda, double *C);
 void kernel_dpack_tn_8_vs_lib8(int kmax, double *A, int lda, double *C, int m1);
 // 4
-void kernel_dpack_tt_4_lib8(int kmax, double *A, int lda, double *C, int sdc); // TODO offsetC 
-void kernel_dpack_tt_4_vs_lib8(int kmax, double *A, int lda, double *C, int sdc, int m1); // TODO offsetC 
+void kernel_dpack_tt_4_lib8(int kmax, double *A, int lda, double *C, int sdc); // TODO offsetC
+void kernel_dpack_tt_4_vs_lib8(int kmax, double *A, int lda, double *C, int sdc, int m1); // TODO offsetC
 
 // level 2 BLAS
 // 16

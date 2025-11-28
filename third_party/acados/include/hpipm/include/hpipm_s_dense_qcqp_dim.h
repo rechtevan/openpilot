@@ -95,5 +95,3 @@ void s_dense_qcqp_dim_set_ns(int value, struct s_dense_qcqp_dim *dim);
 
 
 #endif // HPIPM_S_DENSE_QCQP_DIM_H_
-
-

@@ -117,5 +117,3 @@ void s_sim_erk_solve(struct s_sim_erk_arg *arg, struct s_sim_erk_ws *work);
 #endif
 
 #endif // HPIPM_D_SIM_ERK_H_
-
-

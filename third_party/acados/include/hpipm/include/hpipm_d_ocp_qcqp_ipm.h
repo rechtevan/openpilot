@@ -187,4 +187,3 @@ void d_ocp_qcqp_ipm_solve(struct d_ocp_qcqp *qp, struct d_ocp_qcqp_sol *qp_sol, 
 
 
 #endif // HPIPM_D_OCP_QCQP_IPM_H_
-

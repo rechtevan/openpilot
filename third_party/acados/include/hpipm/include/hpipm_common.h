@@ -72,5 +72,3 @@ enum hpipm_status
 
 
 #endif // HPIPM_COMMON_H_
-
-

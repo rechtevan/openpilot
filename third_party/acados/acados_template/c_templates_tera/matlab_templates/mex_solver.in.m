@@ -267,4 +267,3 @@ classdef {{ model.name }}_mex_solver < handle
     end % methods
 
 end % class
-

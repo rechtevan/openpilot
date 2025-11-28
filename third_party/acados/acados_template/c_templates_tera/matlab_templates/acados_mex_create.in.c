@@ -169,7 +169,7 @@ void mexFunction(int nlhs, mxArray *plhs[], int nrhs, const mxArray *prhs[])
     memcpy(fieldnames[12],"disc_phi_fun",sizeof("disc_phi_fun"));
     memcpy(fieldnames[13],"disc_phi_fun_jac",sizeof("disc_phi_fun_jac"));
     memcpy(fieldnames[14],"disc_phi_fun_jac_hess",sizeof("disc_phi_fun_jac_hess"));
-    
+
     // cost
     memcpy(fieldnames[15],"cost_y_fun",sizeof("cost_y_fun"));
     memcpy(fieldnames[16],"cost_y_fun_jac_ut_xt",sizeof("cost_y_fun_jac_ut_xt"));

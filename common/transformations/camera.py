@@ -176,4 +176,3 @@ def img_from_device(pt_device):
 
   pt_img = pt_view/pt_view[:, 2:3]
   return pt_img.reshape(input_shape)[:, :2]
-

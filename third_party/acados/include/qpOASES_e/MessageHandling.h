@@ -53,13 +53,13 @@ BEGIN_NAMESPACE_QPOASES
 
 /**
  *	\brief Defines all symbols for global return values.
- *	
+ *
  *  The enumeration returnValueType defines all symbols for global return values.
  *	Important: All return values are assumed to be nonnegative!
  *
  *	\author Hans Joachim Ferreau
  */
-typedef enum 
+typedef enum
 {
 TERMINAL_LIST_ELEMENT = -1,						/**< Terminal list element, internal usage only! */
 /* miscellaneous */
@@ -226,7 +226,7 @@ RET_SIMPLE_STATUS_M3 							/**< QP problem is unbounded (and thus could not be 
 
 /**
  *	\brief Data structure for entries in global message list.
- *	
+ *
  *	Data structure for entries in global message list.
  *
  *	\author Hans Joachim Ferreau
@@ -243,7 +243,7 @@ typedef struct
 
 
 
-/** 
+/**
  *	\brief Handles all kind of error messages, warnings and other information.
  *
  *	This class handles all kinds of messages (errors, warnings, infos) initiated

@@ -188,6 +188,3 @@ class Gps(KaitaiStruct):
             self.fit_interval_flag = self._io.read_bits_int_be(1) != 0
             self.aoda = self._io.read_bits_int_be(5)
             self.reserved = self._io.read_bits_int_be(2)
-
-
-

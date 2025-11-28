@@ -78,5 +78,3 @@ void s_ocp_qcqp_res_print(struct s_ocp_qcqp_dim *qcqp_dim, struct s_ocp_qcqp_res
 
 
 #endif // HPIPM_S_OCP_QCQP_UTILS_H_
-
-

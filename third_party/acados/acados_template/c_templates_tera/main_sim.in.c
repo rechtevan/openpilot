@@ -110,7 +110,7 @@ int main()
 
         sim_out_get(acados_sim_config, acados_sim_dims,
                acados_sim_out, "x", x_current);
-        
+
         printf("\nx_current, %d\n", ii);
         for (int jj = 0; jj < NX; jj++)
         {

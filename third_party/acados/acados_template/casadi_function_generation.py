@@ -705,4 +705,3 @@ def generate_c_code_constraint( model, con_name, is_terminal, opts ):
     os.chdir(cwd)
 
     return
-

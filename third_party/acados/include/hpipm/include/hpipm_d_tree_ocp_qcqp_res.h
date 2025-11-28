@@ -103,6 +103,3 @@ void d_tree_ocp_qcqp_res_compute_inf_norm(struct d_tree_ocp_qcqp_res *res);
 
 
 #endif // HPIPM_D_TREE_OCP_QCQP_RES_H_
-
-
-

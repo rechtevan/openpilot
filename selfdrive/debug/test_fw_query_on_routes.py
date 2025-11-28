@@ -179,4 +179,3 @@ if __name__ == "__main__":
   print(f"Correct fuzzy matches:        {good_fuzzy}")
   print(f"Wrong fuzzy matches:          {wrong_fuzzy}")
   print()
-

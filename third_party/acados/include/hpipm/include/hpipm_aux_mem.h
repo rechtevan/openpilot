@@ -49,4 +49,3 @@ void hpipm_zero_memset(hpipm_size_t memsize, void *mem);
 #endif
 
 #endif // HPIPM_AUX_MEM_H_
-

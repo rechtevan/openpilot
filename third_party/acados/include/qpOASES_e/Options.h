@@ -130,7 +130,7 @@ returnValue Options_setToFast(		Options* _THIS
  *	adjusting inconsistent ones.
  *	Note: This routine cannot (and does not try to) ensure that values
  *	      are set to reasonable values that make the QP solution work!
- *	\return SUCCESSFUL_RETURN \n 
+ *	\return SUCCESSFUL_RETURN \n
  *		    RET_OPTIONS_ADJUSTED */
 returnValue Options_ensureConsistency(	Options* _THIS
 										);

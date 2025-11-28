@@ -102,5 +102,3 @@ void d_tree_ocp_qp_res_compute_inf_norm(struct d_tree_ocp_qp_res *res);
 
 
 #endif // HPIPM_D_TREE_OCP_QP_RES_H_
-
-

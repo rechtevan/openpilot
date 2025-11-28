@@ -570,5 +570,3 @@ struct LidarPts @0xe3d6685d4e9d8f7a {
   # For storing in file
   pkt @4 :Data;
 }
-
-

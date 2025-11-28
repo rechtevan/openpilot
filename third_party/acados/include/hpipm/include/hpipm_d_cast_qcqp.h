@@ -68,4 +68,3 @@ void d_cast_qcqp_cond(struct d_ocp_qcqp *ocp_qp, struct d_dense_qcqp *dense_qp);
 
 
 #endif // HPIPM_D_CAST_QCQP_H_
-

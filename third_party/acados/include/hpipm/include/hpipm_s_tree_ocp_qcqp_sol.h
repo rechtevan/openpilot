@@ -94,4 +94,3 @@ void s_tree_ocp_qcqp_sol_get_lam_ug(int node, struct s_tree_ocp_qcqp_sol *qp_sol
 
 
 #endif // HPIPM_S_TREE_OCP_QCQP_SOL_H_
-

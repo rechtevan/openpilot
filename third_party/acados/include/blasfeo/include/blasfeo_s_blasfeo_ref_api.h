@@ -249,4 +249,3 @@ void blasfeo_ref_sgelqf_pd_lla(int m, int n1, struct blasfeo_smat *sL0, int l0i,
 #endif
 
 #endif  // BLASFEO_S_BLASFEO_REF_API_H_
-

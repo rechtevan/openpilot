@@ -81,4 +81,3 @@ void blasfeo_hp_dgemv_n(int m, int n, double alpha, struct blasfeo_dmat *sA, int
 #endif
 
 #endif  // BLASFEO_D_BLASFEO_HP_API_H_
-

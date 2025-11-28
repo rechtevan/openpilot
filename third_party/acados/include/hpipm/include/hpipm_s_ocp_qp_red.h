@@ -115,4 +115,3 @@ void s_ocp_qp_restore_eq_dof(struct s_ocp_qp *qp, struct s_ocp_qp_sol *qp_sol_re
 
 
 #endif // HPIPM_S_OCP_QP_RED_H_
-

@@ -103,4 +103,3 @@ void d_part_cond_qcqp_expand_sol(struct d_ocp_qcqp *ocp_qp, struct d_ocp_qcqp *p
 
 
 #endif // HPIPM_D_PART_COND_H_
-

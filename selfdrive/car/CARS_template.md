@@ -71,4 +71,3 @@ openpilot does not yet support these Toyota models due to a new message authenti
 * Lexus NX 2022+
 * Toyota bZ4x 2023+
 * Subaru Solterra 2023+
-

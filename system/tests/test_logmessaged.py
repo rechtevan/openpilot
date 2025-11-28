@@ -52,4 +52,3 @@ class TestLogmessaged:
 
     logsize = sum([os.path.getsize(f) for f in self._get_log_files()])
     assert (n*len(msg)) < logsize < (n*(len(msg)+1024))
-

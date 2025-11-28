@@ -102,6 +102,3 @@ void s_tree_ocp_qp_res_compute_inf_norm(struct s_tree_ocp_qp_res *res);
 
 
 #endif // HPIPM_S_TREE_OCP_QP_RES_H_
-
-
-

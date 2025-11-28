@@ -232,5 +232,3 @@ int build_initial_config(uint8_t *dst, const CameraConfig cam, const SensorInfo 
 
   return dst - start;
 }
-
-

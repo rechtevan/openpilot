@@ -127,4 +127,3 @@ void s_cond_qcqp_expand_sol(struct s_ocp_qcqp *ocp_qp, struct s_dense_qcqp_sol *
 
 
 #endif // HPIPM_S_COND_QCQP_H_
-

@@ -80,4 +80,3 @@ void d_tree_ocp_qp_res_print(struct d_tree_ocp_qp_dim *qp_dim, struct d_tree_ocp
 
 
 #endif // HPIPM_D_TREE_OCP_QP_UTILS_H_
-

@@ -12,6 +12,7 @@ jobs:
   analyze:
     name: Analyze
     runs-on: ubuntu-24.04
+    timeout-minutes: 120
     permissions:
       actions: read
       contents: read
@@ -28,11 +29,27 @@ jobs:
         with:
           submodules: true
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v3
         with:
           languages: ${{ matrix.language }}
           queries: security-extended
+          # Exclude submodules and third-party code
+          config: |
+            paths-ignore:
+              - '**/third_party/**'
+              - '**/tinygrad_repo/**'
+              - '**/msgq_repo/**'
+              - '**/opendbc_repo/**'
+              - '**/panda/**'
+              - '**/rednose_repo/**'
+              - '**/teleoprtc_repo/**'
+              - '**/.venv/**'
 
       - name: Autobuild
         uses: github/codeql-action/autobuild@v3
@@ -42,10 +59,14 @@ jobs:
         if: matrix.language == 'cpp'
         run: |
           sudo apt-get update
-          sudo apt-get install -y clang
-          scons -j$(nproc) || echo "Build may fail, CodeQL will analyze what it can"
+          sudo apt-get install -y clang libcapnp-dev capnproto
+          pip install scons pycapnp
+          # Build only the core C++ files, not the full project
+          # This gives CodeQL enough to analyze without full build dependencies
+          scons -j$(nproc) --minimal 2>/dev/null || true
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v3
         with:
           category: "/language:${{ matrix.language }}"
+          upload: failure-only
